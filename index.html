@@ -3,30 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Dr. Giuseppe Romano</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .section {
+            padding: 50px 20px;
+            background: white;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
             text-align: center;
             padding: 20px;
+            background: #333;
+            color: white;
         }
-        img {
-            width: 200px;
-            height: auto;
-            border-radius: 50%;
-            margin-top: 20px;
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <h1>Hello, I'm Giuseppe Romano!</h1>
-    <p>Welcome to my GitHub Page. Here, you'll find information about my projects, research, and interests.</p>
+    <header>
+        <div class="container">
+            <img src="profile.jpg" alt="Giuseppe Romano" class="profile-img">
+            <h1>Dr. Giuseppe Romano</h1>
+            <p>Mechanical Engineer | Computational Modeling | Finite Element Analysis</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
-    <!-- Add your picture -->
-    <img src="profile.jpg" alt="My Picture">
-
-    <p>I'm interested in mechanical engineering, materials engineering, Finitie element analsyis and polymer composites!</p>
-
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Results-driven Mechanical Engineer with expertise in computational modeling, finite element analysis (FEA), and materials science. Passionate about bridging the gap between academia and industry.</p>
+        </div>
+    </section>
+    
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Visiting Research Associate</strong> - University of Manchester (Dec 2023 - Dec 2024)</li>
+                <li><strong>Casual Research Assistant</strong> - University of Manchester (Feb 2024 - Sep 2024)</li>
+                <li><strong>Teaching Assistant</strong> - University of Manchester (Sep 2019 - Present)</li>
+                <li><strong>Research Assistant</strong> - Graphene Innovations Manchester Ltd (Apr 2022 - Sep 2023)</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>PhD in Mechanical Engineering</strong> - University of Manchester (2019-2024)</p>
+            <p><strong>MSc in Mechanical Engineering</strong> - University of Calabria (2015-2019)</p>
+            <p><strong>BSc in Mechanical Engineering</strong> - University of Calabria (2011-2015)</p>
+        </div>
+    </section>
+    
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills & Certifications</h2>
+            <ul>
+                <li>Finite Element Analysis (FEA), High-Performance Computing (HPC)</li>
+                <li>Python, Matlab, Fortran, C++</li>
+                <li>Fracture and Fatigue Mechanics, Composite Materials</li>
+                <li>Fellow, Higher Education Academy (FHEA)</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:giuseppe.romano@manchester.ac.uk">giuseppe.romano@manchester.ac.uk</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/giusepperomano92/" target="_blank">linkedin.com/in/giusepperomano92</a></p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr. Giuseppe Romano</p>
+        </div>
+    </footer>
 </body>
 </html>
