@@ -2,166 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Dr. Giuseppe Romano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giuseppe Romano</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            overflow: hidden;
-            text-align: center;
+            background-color: #121212;
+            color: #fff;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
+            text-align: center;
+            padding: 60px 20px;
+            background: #1e1e1e;
         }
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin-top: 10px;
+            border: 4px solid #007BFF;
         }
-        nav ul {
-            padding: 0;
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
         }
-        nav ul li {
-            display: inline;
+        p {
+            font-size: 1.2em;
+            color: #bbb;
         }
-        nav ul li a {
-            color: white;
+        nav {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+        }
+        nav a {
+            color: #fff;
             text-decoration: none;
-            font-size: 16px;
-            padding: 5px 10px;
+            margin: 0 15px;
+            font-size: 1.1em;
         }
         .section {
-            padding: 30px 15px;
-            background: white;
-            margin: 10px 0;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #1e1e1e;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .card {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .contact-icons a {
+            color: #007BFF;
+            font-size: 1.8em;
+            text-decoration: none;
         }
         footer {
             text-align: center;
-            padding: 15px;
-            background: #333;
-            color: white;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        ul li {
-            list-style-position: inside;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                gap: 5px;
-            }
-            .profile-img {
-                width: 100px;
-                height: 100px;
-            }
-            h1 {
-                font-size: 20px;
-            }
-            p {
-                font-size: 14px;
-            }
+            padding: 20px;
+            background: #222;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="profile.jpg" alt="Giuseppe Romano" class="profile-img">
-            <h1>Dr. Giuseppe Romano</h1>
-            <p>Mechanical Engineer | Computational Modeling | Finite Element Analysis</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img src="profile.jpg" alt="Giuseppe Romano" class="profile-img">
+        <h1>Dr. Giuseppe Romano</h1>
+        <p>Mechanical Engineer | Computational Modeling | Finite Element Analysis</p>
     </header>
     
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
     <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Results-driven Mechanical Engineer with expertise in computational modeling, finite element analysis (FEA), and materials science. Passionate about bridging the gap between academia and industry.</p>
-        </div>
+        <h2>About Me</h2>
+        <p>Results-driven Mechanical Engineer with expertise in computational modeling, finite element analysis (FEA), and materials science. Passionate about bridging the gap between academia and industry.</p>
     </section>
     
     <section id="experience" class="section">
-        <div class="container">
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Visiting Research Associate</strong> - University of Manchester (Dec 2023 - Dec 2024)</li>
-                <li><strong>Casual Research Assistant</strong> - University of Manchester (Feb 2024 - Sep 2024)</li>
-                <li><strong>Teaching Assistant</strong> - University of Manchester (Sep 2019 - Present)</li>
-                <li><strong>Research Assistant</strong> - Graphene Innovations Manchester Ltd (Apr 2022 - Sep 2023)</li>
-            </ul>
-        </div>
+        <h2>Experience</h2>
+        <div class="card"><strong>Visiting Research Associate</strong> - University of Manchester (Dec 2023 - Dec 2024)</div>
+        <div class="card"><strong>Casual Research Assistant</strong> - University of Manchester (Feb 2024 - Sep 2024)</div>
+        <div class="card"><strong>Teaching Assistant</strong> - University of Manchester (Sep 2019 - Present)</div>
+        <div class="card"><strong>Research Assistant</strong> - Graphene Innovations Manchester Ltd (Apr 2022 - Sep 2023)</div>
     </section>
     
     <section id="education" class="section">
-        <div class="container">
-            <h2>Education</h2>
-            <p><strong>PhD in Mechanical Engineering</strong> - University of Manchester (2019-2024)</p>
-            <p><strong>MSc in Mechanical Engineering</strong> - University of Calabria (2015-2019)</p>
-            <p><strong>BSc in Mechanical Engineering</strong> - University of Calabria (2011-2015)</p>
-        </div>
+        <h2>Education</h2>
+        <div class="card"><strong>PhD in Mechanical Engineering</strong> - University of Manchester (2019-2024)</div>
+        <div class="card"><strong>MSc in Mechanical Engineering</strong> - University of Calabria (2015-2019)</div>
+        <div class="card"><strong>BSc in Mechanical Engineering</strong> - University of Calabria (2011-2015)</div>
     </section>
     
     <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills & Certifications</h2>
-            <ul>
-                <li>Finite Element Analysis (FEA), High-Performance Computing (HPC)</li>
-                <li>Python, Matlab, Fortran, C++</li>
-                <li>Fracture and Fatigue Mechanics, Composite Materials</li>
-                <li>Fellow, Higher Education Academy (FHEA)</li>
-            </ul>
-        </div>
+        <h2>Skills & Certifications</h2>
+        <div class="card">Finite Element Analysis (FEA), High-Performance Computing (HPC)</div>
+        <div class="card">Python, Matlab, Fortran, C++</div>
+        <div class="card">Fracture and Fatigue Mechanics, Composite Materials</div>
+        <div class="card">Fellow, Higher Education Academy (FHEA)</div>
     </section>
     
     <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:giuseppe.romano@manchester.ac.uk">giuseppe.romano@manchester.ac.uk</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/giusepperomano92/" target="_blank">linkedin.com/in/giusepperomano92</a></p>
+        <h2>Contact</h2>
+        <div class="contact-icons">
+            <a href="mailto:giuseppe.romano@manchester.ac.uk"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/giusepperomano92/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/gius92" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </section>
     
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Dr. Giuseppe Romano</p>
-        </div>
+        <p>&copy; 2025 Dr. Giuseppe Romano</p>
     </footer>
 </body>
 </html>
